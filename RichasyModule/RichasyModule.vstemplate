@@ -1,0 +1,41 @@
+﻿<VSTemplate Version="3.0.0"
+            Type="ProjectGroup"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Richasy Module</Name>
+        <Description>A template to create a new code module in the Richasy's project. It will automatically create the solution folder for the module and the interfaces, implementation and tests projects with the appropriate dependencies.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType>Richasy Module</ProjectSubType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Module</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <CreateInPlace>true</CreateInPlace>
+        <LanguageTag>csharp</LanguageTag>
+        <PlatformTag>windows</PlatformTag>
+        <PlatformTag>xbox</PlatformTag>
+        <ProjectTypeTag>desktop</ProjectTypeTag>
+        <ProjectTypeTag>uwp</ProjectTypeTag>
+        <ProjectTypeTag>Richasy</ProjectTypeTag>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="$safeprojectname$">
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Interfaces"
+                                     CopyParameters="true">
+                    Interfaces\Interfaces.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Implementation"
+                                     CopyParameters="true">
+                    Implementation\Implementation.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.UnitTests"
+                                     CopyParameters="true">
+                    UnitTests\UnitTests.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

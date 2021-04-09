@@ -1,0 +1,37 @@
+<VSTemplate Version="3.0.0"
+            Type="ProjectGroup"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Richasy Uwp Adapter</Name>
+        <Description>A template to create a Uwp adapter in the Richasy's project. It will automatically create the solution folder, the Uwp library and Uwp tests projects with the appropriate dependencies.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType>Richasy Uwp Adapter</ProjectSubType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Adapter</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <CreateInPlace>true</CreateInPlace>      
+        <LanguageTag>csharp</LanguageTag>
+        <PlatformTag>windows</PlatformTag>
+        <PlatformTag>xbox</PlatformTag>
+        <ProjectTypeTag>desktop</ProjectTypeTag>
+        <ProjectTypeTag>uwp</ProjectTypeTag>
+        <ProjectTypeTag>Richasy</ProjectTypeTag>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="$safeprojectname$">
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Uwp"
+                                     CopyParameters="true">
+                    Adapter.Uwp\Adapter.Uwp.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="$safeprojectname$.Uwp.UnitTests"
+                                     CopyParameters="true">
+                    Adapter.Uwp.UnitTests\Adapter.Uwp.UnitTests.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

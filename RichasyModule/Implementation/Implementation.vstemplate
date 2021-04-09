@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
+            Type="Project">
+    <TemplateData>
+        <Name>Implementation</Name>
+        <Description>The implementation of the module</Description>
+        <ProjectType>CSharp</ProjectType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Implementation</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <CreateInPlace>true</CreateInPlace>
+        <Icon>__TemplateIcon.ico</Icon>
+    </TemplateData>
+    <TemplateContent>
+        <Project TargetFileName="$ext_projectname$.Implementation.csproj"
+                 File="Implementation.csproj"
+                 ReplaceParameters="true">
+            <ProjectItem ReplaceParameters="true"
+                         TargetFileName="$ext_safeprojectname$.cs">Implementation.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>

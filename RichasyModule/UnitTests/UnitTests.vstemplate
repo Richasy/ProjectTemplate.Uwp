@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0"
+            xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"
+            Type="Project">
+    <TemplateData>
+        <Name>UnitTests</Name>
+        <Description>The unit test project of the module</Description>
+        <ProjectType>CSharp</ProjectType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>UnitTests</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <CreateInPlace>true</CreateInPlace>
+        <Icon>__TemplateIcon.ico</Icon>
+    </TemplateData>
+    <TemplateContent>
+        <Project TargetFileName="$ext_projectname$.UnitTests.csproj"
+                 File="Tests.csproj"
+                 ReplaceParameters="true">
+            <ProjectItem ReplaceParameters="true"
+                         TargetFileName="$ext_safeprojectname$Tests.cs">Tests.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>

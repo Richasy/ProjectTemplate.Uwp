@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+    <TemplateData>
+        <Name>Platform.Uwp</Name>
+        <Description>Create a Uwp project providing platform-specific code adapters.</Description>
+        <ProjectType>CSharp</ProjectType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Adapter.Uwp</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>__TemplateIcon.ico</Icon>
+        <CreateInPlace>true</CreateInPlace>
+    </TemplateData>
+    <TemplateContent>
+        <Project TargetFileName="$ext_safeprojectname$.Uwp.csproj" File="Adapter.Uwp.csproj" ReplaceParameters="true">
+        <ProjectItem ReplaceParameters="true" TargetFileName="UwpAdapter.cs">UwpAdapter.cs</ProjectItem>
+        <Folder Name="Properties" TargetFolderName="Properties">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectname$.Uwp.rd.xml">Adapter.Uwp.rd.xml</ProjectItem>
+        </Folder>
+        </Project>
+    </TemplateContent>
+</VSTemplate>

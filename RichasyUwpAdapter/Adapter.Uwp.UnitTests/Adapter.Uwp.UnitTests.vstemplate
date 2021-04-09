@@ -1,0 +1,35 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+    <TemplateData>
+        <Name>Platform.Uwp.UnitTests</Name>
+        <Description>Create a Uwp UnitTests project for testing a platform-specific code library</Description>
+        <ProjectType>CSharp</ProjectType>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Platform.Uwp.UnitTests</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>__TemplateIcon.ico</Icon>
+        <CreateInPlace>true</CreateInPlace>
+    </TemplateData>
+    <TemplateContent>
+        <Project TargetFileName="$ext_safeprojectname$.Uwp.UnitTests.csproj" File="Adapter.Uwp.UnitTests.csproj" ReplaceParameters="true">
+        <ProjectItem ReplaceParameters="true" TargetFileName="UwpAdapterTests.cs">UwpAdapterTests.cs</ProjectItem>
+        <Folder Name="Assets" TargetFolderName="Assets">
+            <ProjectItem ReplaceParameters="false" TargetFileName="LockScreenLogo.scale-200.png">LockScreenLogo.scale-200.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="SplashScreen.scale-200.png">SplashScreen.scale-200.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Square150x150Logo.scale-200.png">Square150x150Logo.scale-200.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.scale-200.png">Square44x44Logo.scale-200.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.targetsize-24_altform-unplated.png">Square44x44Logo.targetsize-24_altform-unplated.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="StoreLogo.png">StoreLogo.png</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Wide310x150Logo.scale-200.png">Wide310x150Logo.scale-200.png</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">Package.appxmanifest</ProjectItem>
+        <Folder Name="Properties" TargetFolderName="Properties">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="UnitTestApp.rd.xml">UnitTestApp.rd.xml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UnitTestApp.xaml">UnitTestApp.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UnitTestApp.xaml.cs">UnitTestApp.xaml.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>

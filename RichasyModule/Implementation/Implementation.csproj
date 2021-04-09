@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Microsoft.Media.Player.$ext_safeprojectname$</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\$ext_safeprojectname$.Interfaces\$ext_safeprojectname$.Interfaces.csproj" />
+    </ItemGroup>
+
+</Project>
