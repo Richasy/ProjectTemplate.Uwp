@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace>Microsoft.Media.Player.$ext_safeprojectname$.Interfaces</RootNamespace>
+        <RootNamespace>$ext_safeprojectname$.Interfaces</RootNamespace>
     </PropertyGroup>
 
 </Project>

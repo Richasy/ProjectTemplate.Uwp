@@ -4,7 +4,7 @@
     <TemplateData>
         <Name>Richasy Uwp Adapter</Name>
         <Description>A template to create a Uwp adapter in the Richasy's project. It will automatically create the solution folder, the Uwp library and Uwp tests projects with the appropriate dependencies.</Description>
-        <Icon>Icon.ico</Icon>
+        <Icon>Logo.ico</Icon>
         <ProjectType>CSharp</ProjectType>
         <ProjectSubType>Richasy Uwp Adapter</ProjectSubType>
         <CreateNewFolder>true</CreateNewFolder>

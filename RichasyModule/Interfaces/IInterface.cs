@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Microsoft.Media.Player.$ext_safeprojectname$.Interfaces
+namespace $ext_safeprojectname$.Interfaces
 {
     /// <summary>
     /// 

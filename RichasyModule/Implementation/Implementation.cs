@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
-using Microsoft.Media.Player.$ext_safeprojectname$.Interfaces;
+using $ext_safeprojectname$.Interfaces;
 
 namespace Microsoft.Media.Player.$ext_safeprojectname$
 {

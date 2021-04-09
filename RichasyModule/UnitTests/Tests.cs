@@ -2,10 +2,10 @@
 
 using System;
 using FluentAssertions;
-using Microsoft.Media.Player.$ext_safeprojectname$;
+using $ext_safeprojectname$;
 using Xunit;
 
-namespace Microsoft.Media.Player.$ext_safeprojectname$.UnitTests
+namespace $ext_safeprojectname$.UnitTests
 {
     public class $ext_safeprojectname$Tests
     {
