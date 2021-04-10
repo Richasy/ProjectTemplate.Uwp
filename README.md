@@ -1,4 +1,4 @@
-# Richasy Template Project
+# Richasy Project Template
 
 This is a UWP project template for personal use. If you want to use it, please follow the steps below:
 
