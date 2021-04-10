@@ -1,0 +1,66 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Richasy App</Name>
+    <Description>This template is used to create Richasy UWP applications, which contains some simple logic optimizations and basic files.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Richasy App</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>App</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Logo.ico</Icon>
+    <CreateInPlace>true</CreateInPlace>
+    <LanguageTag>csharp</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <PlatformTag>xbox</PlatformTag>
+    <ProjectTypeTag>desktop</ProjectTypeTag>
+    <ProjectTypeTag>uwp</ProjectTypeTag>
+    <ProjectTypeTag>Richasy</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$ext_projectname$.csproj" File="App.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <Folder Name="Assets" TargetFolderName="Assets">
+        <ProjectItem ReplaceParameters="false" TargetFileName="LockScreenLogo.scale-200.png">LockScreenLogo.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SplashScreen.scale-200.png">SplashScreen.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Square150x150Logo.scale-200.png">Square150x150Logo.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.scale-200.png">Square44x44Logo.scale-200.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.targetsize-24_altform-unplated.png">Square44x44Logo.targetsize-24_altform-unplated.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StoreLogo.png">StoreLogo.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Wide310x150Logo.scale-200.png">Wide310x150Logo.scale-200.png</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">Package.appxmanifest</ProjectItem>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml">MainPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml.cs">MainPage.xaml.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Default.rd.xml">Default.rd.xml</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <Folder Name="Fonts" TargetFolderName="Fonts" />
+        <Folder Name="Misc" TargetFolderName="Misc">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Update.en_US.txt">Update.en_US.txt</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Update.zh_CN.txt">Update.zh_CN.txt</ProjectItem>
+        </Folder>
+        <Folder Name="Strings" TargetFolderName="Strings">
+          <Folder Name="en-US" TargetFolderName="en-US">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Resources.resw">Resources.resw</ProjectItem>
+          </Folder>
+          <Folder Name="zh-CN" TargetFolderName="zh-CN">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Resources.resw">Resources.resw</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder Name="Styles" TargetFolderName="Styles">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Theme.Dark.xaml">Theme.Dark.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Theme.HighContrast.xaml">Theme.HighContrast.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Theme.Light.xaml">Theme.Light.xaml</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -37,4 +37,5 @@ foreach ($userFolder in $visualStudioUserFolders)
 {
     PackageAndDeployTemplate $userFolder "RichasyModule"
     PackageAndDeployTemplate $userFolder "RichasyUwpAdapter"
+    PackageAndDeployTemplate $userFolder "RichasyUwpApp"
 }
