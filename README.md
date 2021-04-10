@@ -15,7 +15,7 @@ This is a UWP project template for personal use. If you want to use it, please f
 ## How to create an application
 
 1. Create a new **Solution** in Visual Studio and place it where you want.
-2. Run `DownloadConfig.ps1`, input the solution path, and wait for the download to complete.
+2. Run `InitializeSolution.ps1`, input the solution path, and wait for the download to complete.
 3. Create a new `Richasy Uwp App` project in Visual Studio.
 
 ***Note. When creating the project, please place it in the `src` folder in the solution folder to ensure correct path resolution.***
