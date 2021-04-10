@@ -8,9 +8,9 @@ This is a UWP project template for personal use. If you want to use it, please f
 2. Right-click `InstallTemplate.ps1` and select **Run with Powershell**
 3. After the template is installed, your Visual Studio can create `Richasy Uwp App`, `Richasy Uwp Adapter` and `Richasy Module`.
 
-`Richasy Uwp App`: You can create a UWP main application, including basic localized text, theme styles, etc.
-`Richasy Uwp Adapter`: The project type is UWP class library, used to call WinRT API projects. While creating the class library, the corresponding unit test project will be created.
-`Richasy Module`: Based on the .NET Standard 2.0 class library project, three related projects of `Interface`, `Implement` and `UnitTest` will be defined at the same time. In this project, the WinRT API cannot be accessed.
+- `Richasy Uwp App`: You can create a UWP main application, including basic localized text, theme styles, etc.
+- `Richasy Uwp Adapter`: The project type is UWP class library, used to call WinRT API projects. While creating the class library, the corresponding unit test project will be created.
+- `Richasy Module`: Based on the .NET Standard 2.0 class library project, three related projects of `Interface`, `Implement` and `UnitTest` will be defined at the same time. In this project, the WinRT API cannot be accessed.
 
 ## How to create an application
 
