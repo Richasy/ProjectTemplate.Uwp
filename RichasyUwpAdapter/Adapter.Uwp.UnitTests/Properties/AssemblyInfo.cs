@@ -1,4 +1,4 @@
-﻿// Copyright (c) Richasy Corporation. All rights reserved.
+﻿// Copyright (c) Richasy. All rights reserved.
 
 using System.Reflection;
 using System.Runtime.InteropServices;

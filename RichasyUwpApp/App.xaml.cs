@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) Richasy. All rights reserved.
+
+using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -43,11 +45,9 @@ namespace $safeprojectname$
 
         private void OnLaunchedOrActivated(IActivatedEventArgs e)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
-
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
-            if (rootFrame == null)
+            if (!(Window.Current.Content is Frame rootFrame))
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
@@ -74,7 +74,7 @@ namespace $safeprojectname$
             // App launched or activated by link
             else if (e is ProtocolActivatedEventArgs protocalArgs)
             {
-                string arg = protocalArgs.Uri.Query.Replace("?", string.Empty);
+                var arg = protocalArgs.Uri.Query.Replace("?", string.Empty);
                 if (rootFrame.Content == null)
                 {
                     rootFrame.Navigate(typeof(Pages.MainPage), arg);

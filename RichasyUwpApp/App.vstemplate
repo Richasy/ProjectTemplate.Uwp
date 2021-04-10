@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Richasy App</Name>
-    <Description>This template is used to create Richasy UWP applications, which contains some simple logic optimizations and basic files.</Description>
+    <Name>Richasy Uwp App</Name>
+    <Description>This template is used to create Richasy UWP application, which contains some simple logic optimizations and basic files.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>Richasy App</ProjectSubType>
     <SortOrder>1000</SortOrder>
