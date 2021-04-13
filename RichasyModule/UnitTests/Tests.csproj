@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <RootNamespace>Microsoft.Media.Player.$ext_safeprojectname$.UnitTests</RootNamespace>
+        <RootNamespace>Richasy.$ext_safeprojectname$.UnitTests</RootNamespace>
     </PropertyGroup>
 
     <Import Project="$(SolutionDir)\UnitTests.targets" />
