@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace>$ext_safeprojectname$.Interfaces</RootNamespace>
+        <RootNamespace>Richasy.$ext_safeprojectname$.Interfaces</RootNamespace>
     </PropertyGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace $ext_safeprojectname$.Uwp
+namespace Richasy.$ext_safeprojectname$.Uwp
 {
     /// <summary>
     /// Uwp Adapter.

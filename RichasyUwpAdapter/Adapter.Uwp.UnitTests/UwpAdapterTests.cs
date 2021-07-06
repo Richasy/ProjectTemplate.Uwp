@@ -3,7 +3,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace $ext_safeprojectname$.Uwp.UnitTests
+namespace Richasy.$ext_safeprojectname$.Uwp.UnitTests
 {
     public class UwpAdapterTests
     {

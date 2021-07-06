@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Richasy. All rights reserved.
 
 using System;
-using $ext_safeprojectname$.Interfaces;
+using Richasy.$ext_safeprojectname$.Interfaces;
 
 namespace Richasy.$ext_safeprojectname$
 {

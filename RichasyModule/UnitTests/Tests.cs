@@ -2,10 +2,10 @@
 
 using System;
 using FluentAssertions;
-using $ext_safeprojectname$;
+using Richasy.$ext_safeprojectname$;
 using Xunit;
 
-namespace $ext_safeprojectname$.UnitTests
+namespace Richasy.$ext_safeprojectname$.UnitTests
 {
     public class $ext_safeprojectname$Tests
     {

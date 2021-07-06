@@ -24,7 +24,7 @@
     For more information on writing Runtime Directives for libraries, please visit https://go.microsoft.com/fwlink/?LinkID=391919
 -->
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
-    <Library Name="$ext_safeprojectname$.Uwp">
+    <Library Name="Richasy.$ext_safeprojectname$.Uwp">
 
         <!-- add directives for your library here -->
 

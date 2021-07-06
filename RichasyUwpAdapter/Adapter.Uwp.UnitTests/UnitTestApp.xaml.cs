@@ -6,7 +6,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
-namespace $ext_safeprojectname$.Uwp.UnitTests
+namespace Richasy.$ext_safeprojectname$.Uwp.UnitTests
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

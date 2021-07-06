@@ -4,8 +4,8 @@
     <PropertyGroup>
         <ProjectGuid>{$ext_guid1$}</ProjectGuid>
         <OutputType>Library</OutputType>
-        <RootNamespace>$ext_safeprojectname$.Uwp</RootNamespace>
-        <AssemblyName>$ext_safeprojectname$.Uwp</AssemblyName>
+        <RootNamespace>Richasy.$ext_safeprojectname$.Uwp</RootNamespace>
+        <AssemblyName>Richasy.$ext_safeprojectname$.Uwp</AssemblyName>
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     </PropertyGroup>
     <ItemGroup>
@@ -20,7 +20,7 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-            <Version>6.2.10</Version>
+            <Version>6.2.12</Version>
         </PackageReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />

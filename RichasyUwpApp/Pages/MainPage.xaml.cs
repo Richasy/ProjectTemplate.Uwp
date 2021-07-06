@@ -2,7 +2,7 @@
 
 using Windows.UI.Xaml.Controls;
 
-namespace $safeprojectname$.Pages
+namespace Richasy.$safeprojectname$.Pages
 {
     /// <summary>
     /// The page is used for default loading.

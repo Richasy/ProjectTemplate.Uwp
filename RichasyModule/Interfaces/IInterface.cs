@@ -2,7 +2,7 @@
 
 using System;
 
-namespace $ext_safeprojectname$.Interfaces
+namespace Richasy.$ext_safeprojectname$.Interfaces
 {
     /// <summary>
     /// Definition of I$ext_safeprojectname$.
