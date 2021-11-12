@@ -14,7 +14,7 @@
   <mp:PhoneIdentity PhoneProductId="$guid3$" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>App</DisplayName>
+    <DisplayName>ms-resource:AppName</DisplayName>
     <PublisherDisplayName>Richasy</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
