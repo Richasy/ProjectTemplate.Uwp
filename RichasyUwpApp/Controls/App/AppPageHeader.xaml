@@ -1,0 +1,44 @@
+<UserControl
+    x:Class="$safeprojectname$.Controls.App.AppPageHeader"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ext="using:$safeprojectname$.Resources.Extensions"
+    xmlns:local="using:$safeprojectname$.Controls.App"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    mc:Ignorable="d">
+
+    <Grid
+        Margin="{x:Bind CoreViewModel.PageTopPadding, Mode=OneWay}"
+        Padding="{x:Bind CoreViewModel.PageHorizontalPadding, Mode=OneWay}"
+        ColumnSpacing="12">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <ContentPresenter
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="{x:Bind Title, Mode=OneWay}"
+            FontSize="28"
+            FontWeight="SemiLight"
+            TextWrapping="NoWrap" />
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <ContentPresenter
+                Margin="0,0,8,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Content="{x:Bind Element, Mode=OneWay}"
+                Visibility="{x:Bind Element, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}" />
+            <Button
+                x:Name="RefreshButton"
+                VerticalAlignment="Center"
+                Command="{x:Bind RefreshCommand, Mode=OneWay}"
+                Visibility="{x:Bind RefreshCommand, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
+                <local:IconTextBlock Symbol="ArrowSync16" Text="{ext:Locale Name=Refresh}" />
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

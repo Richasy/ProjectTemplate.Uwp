@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <RootNamespace>Richasy.$ext_safeprojectname$.UnitTests</RootNamespace>
+        <LangVersion>10</LangVersion>
     </PropertyGroup>
 
     <Import Project="$(SolutionDir)\UnitTests.targets" />

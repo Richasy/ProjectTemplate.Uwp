@@ -4,10 +4,12 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
+  xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  IgnorableNamespaces="uap mp uap5 uap3">
 
   <Identity
-    Name="App"
+    Name="$safeprojectname$"
     Publisher="CN=richasy"
     Version="1.0.0.0" />
 
@@ -28,7 +30,7 @@
   </Resources>
 
   <Applications>
-    <Application Id="App"
+    <Application Id="$safeprojectname$"
       Executable="$targetnametoken$.exe"
       EntryPoint="$safeprojectname$.App">
       <uap:VisualElements
@@ -40,10 +42,29 @@
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+            <uap5:Extension Category="windows.startupTask">
+                <uap5:StartupTask DisplayName="ms-resource:AppName" Enabled="false" TaskId="$safeprojectname$"/>
+            </uap5:Extension>
+            <uap5:Extension Category="windows.appExecutionAlias"
+                            Executable="$safeprojectname$.exe"
+                            EntryPoint="$safeprojectname$.App">
+                <uap5:AppExecutionAlias>
+                    <uap5:ExecutionAlias Alias="$safeprojectname$.exe" />
+                </uap5:AppExecutionAlias>
+            </uap5:Extension>
+            <uap:Extension Category="windows.protocol" EntryPoint="$safeprojectname$.App">
+                <uap:Protocol Name="$safeprojectname$">
+                    <uap:DisplayName>ms-resource:AppName</uap:DisplayName>
+                    <uap:Logo>Assets\small_logo.png</uap:Logo>
+                </uap:Protocol>
+            </uap:Extension>
+        </Extensions>
     </Application>
   </Applications>
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer"/>
   </Capabilities>
 </Package>

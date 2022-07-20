@@ -7,7 +7,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
-namespace Richasy.$safeprojectname$
+namespace $safeprojectname$
 {
     /// <summary>
     /// Provide application-specific behaviors to supplement the default application classes.

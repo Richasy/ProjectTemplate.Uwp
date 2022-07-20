@@ -46,7 +46,7 @@
       <Version>5.10.3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.13</Version>
+      <Version>6.2.14</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.SDK">
       <Version>16.7.1</Version>
@@ -63,7 +63,7 @@
   <ItemGroup>
     <ProjectReference Include="..\$ext_safeprojectname$.Uwp\$ext_safeprojectname$.Uwp.csproj">
       <Project>{$ext_guid1$}</Project>
-      <Name>Richasy.$ext_safeprojectname$.Uwp</Name>
+      <Name>$ext_safeprojectname$.Uwp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />

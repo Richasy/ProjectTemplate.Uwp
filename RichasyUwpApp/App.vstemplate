@@ -23,6 +23,7 @@
     <Project TargetFileName="$ext_projectname$.csproj" File="App.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="NLog.config">NLog.config</ProjectItem>
       <Folder Name="Assets" TargetFolderName="Assets">
         <ProjectItem ReplaceParameters="false" TargetFileName="LockScreenLogo.scale-200.png">LockScreenLogo.scale-200.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="SplashScreen.scale-200.png">SplashScreen.scale-200.png</ProjectItem>
@@ -30,19 +31,65 @@
         <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.scale-200.png">Square44x44Logo.scale-200.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="Square44x44Logo.targetsize-24_altform-unplated.png">Square44x44Logo.targetsize-24_altform-unplated.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="StoreLogo.png">StoreLogo.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="small_logo.png">small_logo.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="Wide310x150Logo.scale-200.png">Wide310x150Logo.scale-200.png</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">Package.appxmanifest</ProjectItem>
       <Folder Name="Pages" TargetFolderName="Pages">
-        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml">MainPage.xaml</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="MainPage.xaml.cs">MainPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RootPage.xaml">RootPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RootPage.xaml.cs">RootPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppPage.cs">AppPage.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controls" TargetFolderName="Controls">
+        <Folder Name="App" TargetFolderName="App">
+          <Folder Name="CardPanel" TargetFolderName="CardPanel">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardPanel.xaml">CardPanel.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardPanel.cs">CardPanel.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardPanel.Fields.cs">CardPanel.Fields.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardPanel.Properties.cs">CardPanel.Properties.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardPanelAutomationPeer.cs">CardPanelAutomationPeer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardPanelStateChangedEventArgs.cs">CardPanelStateChangedEventArgs.cs</ProjectItem>
+          </Folder>
+          <Folder Name="CenterPopup" TargetFolderName="CenterPopup">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CenterPopup.xaml">CenterPopup.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CenterPopup.cs">CenterPopup.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CenterPopup.Properties.cs">CenterPopup.Properties.cs</ProjectItem>
+          </Folder>
+          <Folder Name="CommonImageEx" TargetFolderName="CommonImageEx">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CommonImageEx.xaml">CommonImageEx.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CommonImageEx.cs">CommonImageEx.cs</ProjectItem>
+          </Folder>
+          <Folder Name="IconTextBlock" TargetFolderName="IconTextBlock">
+            <ProjectItem ReplaceParameters="true" TargetFileName="IconTextBlock.xaml">IconTextBlock.xaml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IconTextBlock.cs">IconTextBlock.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppNavigationView.xaml">AppNavigationView.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppNavigationView.xaml.cs">AppNavigationView.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppPageHeader.xaml">AppPageHeader.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppPageHeader.xaml.cs">AppPageHeader.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppSearchBox.xaml">AppSearchBox.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppSearchBox.xaml.cs">AppSearchBox.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppTitleBar.xaml">AppTitleBar.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppTitleBar.xaml.cs">AppTitleBar.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TipPopup.xaml">TipPopup.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TipPopup.xaml.cs">TipPopup.xaml.cs</ProjectItem>
+        </Folder>
       </Folder>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Default.rd.xml">Default.rd.xml</ProjectItem>
       </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">
-        <Folder Name="Fonts" TargetFolderName="Fonts" />
+        <Folder Name="Converters" TargetFolderName="Converters">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BoolToVisibilityConverter.cs">BoolToVisibilityConverter.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ObjectToBoolConverter.cs">ObjectToBoolConverter.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ObjectToVisibilityConverter.cs">ObjectToVisibilityConverter.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Extensions" TargetFolderName="Extensions">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BasicExtension.cs">BasicExtension.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LocaleExtension.cs">LocaleExtension.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="NavigationExtension.cs">NavigationExtension.cs</ProjectItem>
+        </Folder>
         <Folder Name="Misc" TargetFolderName="Misc">
           <ProjectItem ReplaceParameters="true" TargetFileName="Update.en_US.txt">Update.en_US.txt</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Update.zh_CN.txt">Update.zh_CN.txt</ProjectItem>
@@ -51,15 +98,20 @@
           <Folder Name="en-US" TargetFolderName="en-US">
             <ProjectItem ReplaceParameters="false" TargetFileName="Resources.resw">Resources.resw</ProjectItem>
           </Folder>
-          <Folder Name="zh-CN" TargetFolderName="zh-CN">
+          <Folder Name="zh-Hans" TargetFolderName="zh-Hans">
             <ProjectItem ReplaceParameters="false" TargetFileName="Resources.resw">Resources.resw</ProjectItem>
           </Folder>
         </Folder>
       </Folder>
       <Folder Name="Styles" TargetFolderName="Styles">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Style.Dimensions.xaml">Style.Dimensions.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Style.Overwrite.xaml">Style.Overwrite.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Theme.Dark.xaml">Theme.Dark.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Theme.HighContrast.xaml">Theme.HighContrast.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Theme.Light.xaml">Theme.Light.xaml</ProjectItem>
+      </Folder>
+      <Folder Name="Themes" TargetFolderName="Themes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Generic.xaml">Generic.xaml</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
